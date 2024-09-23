@@ -99,3 +99,18 @@ Following diagram gives an overview how the low-level device intent is construct
 </figure>
 
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js" async></script>
+
+
+The following table summarizes the current support for SR Linux 24.7.1 for the top-level Yang-paths:
+| path              | managed? | purge?  | explicit delete? |
+|-------------------|----------|---------|------------------|
+| /acl              | partial  | no      | no               |
+| /bfd              | partial  | yes     | no               |
+| /interface        | yes      | yes     | yes              |
+| /network-instance | yes      | yes     | yes              |
+| /platform         | no       | no      | no               |
+| /qos              | no       | no      | no               |
+| /routing-policy   | partial  | no      | no               |
+| /system           | partial  | partial | no               |
+| /tunnel           | no       | no      | no               |
+| /tunnel-interface | yes      | yes     | yes              |
